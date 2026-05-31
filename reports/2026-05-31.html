@@ -12,40 +12,36 @@
       --muted: #6a5f58;
       --line: #d8ccc0;
       --accent: #9a3412;
-      --accent-soft: #f7d9c8;
     }
     body {
       margin: 0;
       background: linear-gradient(180deg, #efe6d8 0%, var(--bg) 100%);
       color: var(--ink);
-      font: 16px/1.6 "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      font: 16px/1.7 "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
     }
     main {
-      max-width: 980px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 40px 24px 64px;
     }
-    .hero {
-      background: radial-gradient(circle at top left, #fff6ee 0%, var(--paper) 52%, #f6ecdf 100%);
+    .hero, .section-card {
+      background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 24px;
       padding: 28px;
       box-shadow: 0 20px 60px rgba(84, 52, 35, 0.08);
     }
+    .section-card { margin-top: 24px; }
     h1, h2, h3 { margin: 0 0 12px; }
     h1 { font-size: 34px; line-height: 1.15; }
-    h2 {
-      font-size: 22px;
-      margin-top: 28px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-    }
-    h3 { font-size: 18px; margin-top: 18px; }
-    p, li, span { color: var(--ink); }
+    h2 { font-size: 24px; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); }
+    h3 { font-size: 20px; margin-top: 18px; }
+    h4 { font-size: 18px; margin: 18px 0 10px; }
+    h5 { font-size: 16px; margin: 14px 0 8px; }
     .meta { color: var(--muted); font-size: 14px; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 18px;
       margin-top: 20px;
     }
@@ -55,30 +51,28 @@
       border-radius: 18px;
       padding: 18px;
     }
-    .badge {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
     ol, ul { padding-left: 22px; }
     li + li { margin-top: 8px; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--paper);
+      margin: 12px 0 18px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f3e6d7; }
   </style>
 </head>
 <body>
   <main>
     <section class="hero">
       <h1>Daily Investment Tracker</h1>
-      <p class="meta">2026-05-31 18:11 +0800 generated report</p>
-      <p>這份晨報聚焦可驗證訊號：官方發表、平台名稱、部署節點、合作、月營收與法說，而不是只看新聞熱度。</p>
+      <p class="meta">2026-05-31 18:18 +0800 generated report</p>
+      <p>This page includes the full morning brief research sections, not only summary cards.</p>
       <div class="grid">
         <div class="card">
           <h3>Top Themes</h3>
@@ -91,9 +85,362 @@
       </div>
     </section>
     <h2>Watchlist Scoreboards</h2>
-    <section><h3>Rubin</h3><ol><li><strong>NVIDIA</strong> <span>validation 43.5 | conviction 18.6 | heat 18.1 | recency Fresh(4) | momentum Rising</span></li><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>ASE</strong> <span>validation 2.7 | conviction 0.2 | heat 0.4 | recency Stale(1) | momentum Fading</span></li><li><strong>Unimicron</strong> <span>validation 2.4 | conviction 0.4 | heat 0.7 | recency Stale(1) | momentum Fading</span></li><li><strong>Giga-Byte</strong> <span>validation 1.7 | conviction 1.2 | heat 1.1 | recency Flash(5) | momentum Fading</span></li><li><strong>Quanta</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Asus</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Wiwynn</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section><section><h3>AI PC / N1X</h3><ol><li><strong>NVIDIA</strong> <span>validation 43.5 | conviction 18.6 | heat 18.1 | recency Fresh(4) | momentum Rising</span></li><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>MediaTek</strong> <span>validation 9.0 | conviction 3.4 | heat 5.5 | recency Fresh(4) | momentum Rising</span></li><li><strong>Giga-Byte</strong> <span>validation 1.7 | conviction 1.2 | heat 1.1 | recency Flash(5) | momentum Fading</span></li><li><strong>Quanta</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Asus</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>AMD</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Wistron</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section><section><h3>Materials / PCB</h3><ol><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>ASE</strong> <span>validation 2.7 | conviction 0.2 | heat 0.4 | recency Stale(1) | momentum Fading</span></li><li><strong>Unimicron</strong> <span>validation 2.4 | conviction 0.4 | heat 0.7 | recency Stale(1) | momentum Fading</span></li><li><strong>Tripod</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Taiwan Union</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Nan Ya PCB</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>ITEQ</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Gold Circuit</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section>
-    <h2>Valuable Expansions</h2>
-    <ol><li><a href="https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/">NVIDIA GTC Taipei at COMPUTEX: Live Updates on What’s Next in AI</a> <span>NVIDIA Newsroom | score 7</span></li><li><a href="https://cloud.google.com/blog/topics/customers/cool-stuff-google-cloud-customers-built-monthly-round-up/">Cool stuff Google Cloud customers built, May edition: Agentic algorithms for supply chains; virtual try-on APIs; robotic camera operators &amp; more</a> <span>Google Cloud Blog | score 7</span></li><li><a href="https://ccc.technews.tw/2026/05/31/gigabyte-enter-infinity-computex-2026/">技嘉以「ENTER INFINITY」主題參展 COMPUTEX 2026 全面展現 AI 生態系與沉浸式電競體驗</a> <span>TechNews | score 6</span></li><li><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/">What’s new with Google Cloud</a> <span>Google Cloud Blog | score 6</span></li><li><a href="https://news.microsoft.com/source/2025/05/06/microsoft-and-ffa-help-students-use-smart-sensors-and-ai-to-learn-about-the-future-of-farming/">Microsoft and FFA help students use smart sensors and AI to learn about the future of farming and technology</a> <span>Microsoft Stories | score 5</span></li><li><a href="https://blogs.nvidia.com/blog/google-cloud-developer-community-ai-builders/">NVIDIA and Google Cloud Empower the Next Wave of AI Builders</a> <span>NVIDIA Newsroom | score 5</span></li><li><a href="https://cloud.google.com/blog/topics/public-sector/how-the-university-of-central-oklahoma-is-using-ai-to-streamline-analysis-of-complex-criminal-cases/">How the University of Central Oklahoma is using AI to streamline analysis of complex criminal cases</a> <span>Google Cloud Blog | score 5</span></li><li><a href="https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available/">Nano Banana 2 and Nano Banana Pro are generally available, and already powering creative workflows</a> <span>Google Cloud Blog | score 5</span></li></ol>
+    <section class="section-card"><h3>Rubin</h3><ol><li><strong>NVIDIA</strong> <span>validation 43.5 | conviction 18.6 | heat 18.1 | recency Fresh(4) | momentum Rising</span></li><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>ASE</strong> <span>validation 2.7 | conviction 0.2 | heat 0.4 | recency Stale(1) | momentum Fading</span></li><li><strong>Unimicron</strong> <span>validation 2.4 | conviction 0.4 | heat 0.7 | recency Stale(1) | momentum Fading</span></li><li><strong>Giga-Byte</strong> <span>validation 1.7 | conviction 1.2 | heat 1.1 | recency Flash(5) | momentum Fading</span></li><li><strong>Quanta</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Asus</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Wiwynn</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section><section class="section-card"><h3>AI PC / N1X</h3><ol><li><strong>NVIDIA</strong> <span>validation 43.5 | conviction 18.6 | heat 18.1 | recency Fresh(4) | momentum Rising</span></li><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>MediaTek</strong> <span>validation 9.0 | conviction 3.4 | heat 5.5 | recency Fresh(4) | momentum Rising</span></li><li><strong>Giga-Byte</strong> <span>validation 1.7 | conviction 1.2 | heat 1.1 | recency Flash(5) | momentum Fading</span></li><li><strong>Quanta</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Asus</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>AMD</strong> <span>validation 0.0 | conviction 0.3 | heat 0.5 | recency Aging(2) | momentum Fading</span></li><li><strong>Wistron</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section><section class="section-card"><h3>Materials / PCB</h3><ol><li><strong>TSMC</strong> <span>validation 14.3 | conviction 4.8 | heat 5.7 | recency Fresh(4) | momentum Rising</span></li><li><strong>ASE</strong> <span>validation 2.7 | conviction 0.2 | heat 0.4 | recency Stale(1) | momentum Fading</span></li><li><strong>Unimicron</strong> <span>validation 2.4 | conviction 0.4 | heat 0.7 | recency Stale(1) | momentum Fading</span></li><li><strong>Tripod</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Taiwan Union</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Nan Ya PCB</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>ITEQ</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li><li><strong>Gold Circuit</strong> <span>validation 0.0 | conviction 0.0 | heat 0.0 | recency Unknown(0) | momentum Unknown</span></li></ol></section>
+    <section class="section-card">
+      <h2>Valuable Expansions</h2>
+      <ol><li><a href="https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/">NVIDIA GTC Taipei at COMPUTEX: Live Updates on What’s Next in AI</a> <span>NVIDIA Newsroom | score 7</span></li><li><a href="https://cloud.google.com/blog/topics/customers/cool-stuff-google-cloud-customers-built-monthly-round-up/">Cool stuff Google Cloud customers built, May edition: Agentic algorithms for supply chains; virtual try-on APIs; robotic camera operators &amp; more</a> <span>Google Cloud Blog | score 7</span></li><li><a href="https://ccc.technews.tw/2026/05/31/gigabyte-enter-infinity-computex-2026/">技嘉以「ENTER INFINITY」主題參展 COMPUTEX 2026 全面展現 AI 生態系與沉浸式電競體驗</a> <span>TechNews | score 6</span></li><li><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/">What’s new with Google Cloud</a> <span>Google Cloud Blog | score 6</span></li><li><a href="https://news.microsoft.com/source/2025/05/06/microsoft-and-ffa-help-students-use-smart-sensors-and-ai-to-learn-about-the-future-of-farming/">Microsoft and FFA help students use smart sensors and AI to learn about the future of farming and technology</a> <span>Microsoft Stories | score 5</span></li><li><a href="https://blogs.nvidia.com/blog/google-cloud-developer-community-ai-builders/">NVIDIA and Google Cloud Empower the Next Wave of AI Builders</a> <span>NVIDIA Newsroom | score 5</span></li><li><a href="https://cloud.google.com/blog/topics/public-sector/how-the-university-of-central-oklahoma-is-using-ai-to-streamline-analysis-of-complex-criminal-cases/">How the University of Central Oklahoma is using AI to streamline analysis of complex criminal cases</a> <span>Google Cloud Blog | score 5</span></li><li><a href="https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available/">Nano Banana 2 and Nano Banana Pro are generally available, and already powering creative workflows</a> <span>Google Cloud Blog | score 5</span></li></ol>
+    </section>
+    <section class="section-card">
+      <h2>Rubin Beneficiaries</h2>
+      <h3>Rubin 受惠股總表</h3>
+<p>更新日期：2026-05-31</p>
+<p>方法：優先採用 NVIDIA 官方、公司官方、IR / 月營收與公開媒體交叉驗證。</p>
+<p>分級原則：</p>
+<ul>
+<li>`A`：公司或 NVIDIA 官方公開資料可直接連到 Rubin / Vera Rubin 平台</li>
+<li>`B`：高機率核心受惠，公開資料強，但多數仍屬供應鏈映射</li>
+<li>`C`：高彈性題材，邏輯成立，但更依賴市場預期與後續驗證</li>
+</ul>
+<h4>核心結論</h4>
+<ul>
+<li>`整體含金量最高`：`NVIDIA`</li>
+<li>`台股最核心`：`台積電 2330`、`鴻海 2317`、`緯穎 6669`、`台達電 2308`</li>
+<li>`台股高彈性`：`奇鋐 3017`、`雙鴻 3324`、`健策 3653`、`欣興 3037`、`南電 8046`</li>
+<li>`中長線選配`：`日月光投控 3711`、`上詮 3363`、`訊芯-KY 6451`</li>
+</ul>
+<h4>受惠股總表</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>個股</th><th>等級</th><th>角色</th><th>受惠邏輯</th><th>證據等級</th><th>近期催化</th><th>主要風險</th><th>追蹤重點</th></tr></thead>
+<tbody>
+<tr><td>NVIDIA</td><td>A</td><td>平台本體</td><td>Rubin GPU、Vera CPU、NVLink 6、ConnectX-9、BlueField-4、Spectrum-6 全由其定義</td><td>NVIDIA 官方最強</td><td>Rubin 2H26 部署、雲端客戶導入</td><td>估值高、產品節奏變動</td><td>官方新品進度、雲端部署節點</td></tr>
+<tr><td>台積電 2330</td><td>B</td><td>先進製程 / 先進封裝</td><td>Rubin / Rubin Ultra 需要高階製程與封裝，CoWoS / CoWoS-L 需求延伸</td><td>強推論，非逐名官宣</td><td>月營收、法說、CoWoS 擴產</td><td>市場已高度預期、規格變動</td><td>月營收、資本支出、封裝產能</td></tr>
+<tr><td>鴻海 2317</td><td>A</td><td>整櫃 AI server / 模組化機房</td><td>官方已公開展示 Vera Rubin NVL72 整櫃與模組化資料中心</td><td>公司官方直接連結</td><td>AI server 出貨、機房整合</td><td>毛利率、資本支出壓力</td><td>AI server 營收占比、雲端客戶訂單</td></tr>
+<tr><td>緯穎 6669</td><td>A</td><td>機架級 AI factory 整合</td><td>官方展示 Vera Rubin NVL72 AI factory infrastructure，且 Q1 2026 強勁成長</td><td>公司官方直接連結</td><td>AI rack 放量、液冷整合</td><td>高基期、料件成本波動</td><td>月營收、AI 產品組合、液冷滲透</td></tr>
+<tr><td>台達電 2308</td><td>B</td><td>電力 / 800VDC / 液冷 CDU</td><td>Rubin 帶動機櫃功耗與 800VDC 架構升級，Delta 官方展示 power+cooling 架構</td><td>公司官方強</td><td>Data Center World / GTC 展示後接單</td><td>專案認列節奏、競爭者增多</td><td>月營收、電源 / 散熱產品比重</td></tr>
+<tr><td>華碩 2357</td><td>A</td><td>AI POD / 液冷基礎架構</td><td>官方推出 ASUS AI POD with NVIDIA Vera Rubin NVL72</td><td>公司官方直接連結</td><td>AI POD 客戶擴張</td><td>AI server 基期較低、執行風險</td><td>AI server 年增、企業 AI 客戶</td></tr>
+<tr><td>技嘉 2376</td><td>A</td><td>GIGAPOD / 企業 AI 解決方案</td><td>官方支援 Vera Rubin 平台並推機架級方案</td><td>公司官方直接連結</td><td>COMPUTEX / GTC、AI 工廠方案</td><td>競爭激烈、企業採購時程</td><td>AI server / AI infra 訂單</td></tr>
+<tr><td>緯創 3231</td><td>B</td><td>伺服器製造 / 協作開發</td><td>緯穎官方稿提到與 Wistron 協作開發 Rubin 基建</td><td>間接官方</td><td>AI server 訂單放量</td><td>非 Rubin 核心品牌曝光較少</td><td>月營收、AI server 占比</td></tr>
+<tr><td>仁寶 2324</td><td>A</td><td>HGX Rubin NVL8 方案</td><td>官方展示 HGX Rubin NVL8 高密度 AI server</td><td>公司官方直接連結</td><td>AI server 新客戶</td><td>傳統 PC 業務干擾評價</td><td>AI server 營收占比</td></tr>
+<tr><td>和碩 4938</td><td>A-</td><td>Rubin NVL72 平台準備</td><td>公開規格表已列 Vera Rubin NVL72 方案</td><td>規格資料表</td><td>平台驗證 / 客戶導入</td><td>缺少更多營運面驗證</td><td>出貨驗證、伺服器業務比重</td></tr>
+<tr><td>奇鋐 3017</td><td>C</td><td>液冷 / 散熱</td><td>Rubin 功耗推升，液冷滲透率提高，產業鏈普遍點名</td><td>媒體與供應鏈</td><td>液冷滲透加速</td><td>題材反映快、估值波動</td><td>法說、冷板 / CDU 出貨</td></tr>
+<tr><td>雙鴻 3324</td><td>C</td><td>液冷 / 冷板</td><td>同上，受惠於高功耗 AI rack 熱管理升級</td><td>媒體與供應鏈</td><td>液冷放量</td><td>市場情緒化程度高</td><td>法說、AI 散熱占比</td></tr>
+<tr><td>健策 3653</td><td>C</td><td>均熱片 / 散熱結構件</td><td>TechNews 指出 Rubin 設計變更直接影響營收預估</td><td>供應鏈消息強</td><td>Rubin 設計定案</td><td>規格急轉彎風險高</td><td>設計定案、出貨量</td></tr>
+<tr><td>欣興 3037</td><td>C</td><td>ABF 載板</td><td>高階封裝 / 高速傳輸帶動 ABF 需求</td><td>產業推論</td><td>CoWoS / 高速平台升級</td><td>容易先炒預期</td><td>月營收、法人庫存修正</td></tr>
+<tr><td>南電 8046</td><td>C</td><td>ABF 載板</td><td>同欣興，受惠高階載板需求</td><td>產業推論</td><td>載板需求回升</td><td>景氣循環與報價壓力</td><td>產能利用率、ASP</td></tr>
+<tr><td>台光電 2383</td><td>C</td><td>CCL / 高速材料</td><td>高速互連、伺服器板材升級</td><td>產業推論</td><td>高速板材需求</td><td>題材易外溢過度</td><td>營收結構、AI 相關占比</td></tr>
+<tr><td>日月光投控 3711</td><td>B</td><td>高階封測 / SiPh</td><td>若 Rubin Ultra 走 CPO / SiPh，ASE 是台灣封測主軸</td><td>產業與 TechNews</td><td>矽光子商轉</td><td>落地時間偏後</td><td>先進封測接單、CPO 驗證</td></tr>
+<tr><td>上詮 3363</td><td>C</td><td>FAU / CPO</td><td>被點名為台積電 CPO 夥伴之一，Rubin Ultra 帶動光進銅退</td><td>產業媒體</td><td>矽光子放量</td><td>時點偏後、波動很大</td><td>驗證進度、量產節點</td></tr>
+<tr><td>訊芯-KY 6451</td><td>C</td><td>CPO / 光電封裝</td><td>已被視為 CPO 驗證與小量投產受惠者</td><td>產業媒體</td><td>CPO 商轉</td><td>時程與規格不確定</td><td>認證、量產進度</td></tr>
+<tr><td>SK Hynix</td><td>B</td><td>HBM4</td><td>多家媒體指向為 Rubin 核心 HBM4 供應商</td><td>產業媒體強</td><td>HBM4 出貨</td><td>記憶體報價循環</td><td>HBM4 產能與 ASP</td></tr>
+<tr><td>Samsung Electronics</td><td>B</td><td>HBM4</td><td>同 SK Hynix，為核心候選供應商</td><td>產業媒體強</td><td>HBM4 放量</td><td>良率 / 認證節奏</td><td>HBM4 認證與出貨</td></tr>
+</tbody></table></div>
+<h4>證據摘要</h4>
+<h5>1. NVIDIA 官方已公開確認的 Rubin 平台核心</h5>
+<ul>
+<li>Rubin 平台組件：`Vera CPU`、`Rubin GPU`、`NVLink 6 switch`、`ConnectX-9`、`BlueField-4`、`Spectrum-6 Ethernet`</li>
+<li>平台定位：`NVL72` 機架級 AI factory、全液冷、高密度部署</li>
+<li>首波導入：`AWS`、`Google Cloud`、`Microsoft`、`OCI` 等</li>
+</ul>
+<p>來源：</p>
+<ul>
+<li>[NVIDIA Newsroom: Rubin platform](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer)</li>
+<li>[NVIDIA Newsroom: Vera Rubin opens agentic AI frontier](https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform?linkId=100000412790691&amp;ncid=so-face-181339)</li>
+<li>[NVIDIA Technical Blog: Inside the Rubin Platform](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/)</li>
+<li>[NVIDIA NVL72 product page](https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/)</li>
+</ul>
+<h5>2. 台廠官方已直接公開連到 Rubin 的公司</h5>
+<ul>
+<li>鴻海：[官方新聞稿](https://www.honhai.com/en-us/press-center/press-releases/latest-news/1975)</li>
+<li>緯穎：[官方新聞稿](https://www.wiwynn.com/news/wiwynn-showcases-nvidia-vera-rubin-nvl72-ai-factory-infrastructure-at-nvidia-gtc-2026)</li>
+<li>華碩：[官方新聞稿](https://servers.asus.com/news/ASUS-Unveils-Game-Changing-Liquid-Cooled-AI-Infrastructure-Powered-by-NVIDIA-Vera-Rubin)</li>
+<li>技嘉：[官方新聞稿](https://www.gigabyte.com/si/Press/News/2371)</li>
+<li>仁寶：[官方新聞稿](https://www.compal.com/esg/en/news/compal-introduces-high-density-nvidia-hgxtm-r/)</li>
+<li>和碩：[公開資料表](https://svr.pegatroncorp.com/SpecFile/PEGATRON_RA4803-72N3_DS_2026v1.pdf)</li>
+</ul>
+<h5>3. 台股供應鏈延伸方向</h5>
+<ul>
+<li>電力 / 液冷：台達電、奇鋐、雙鴻、健策</li>
+<li>先進封裝 / 載板：台積電、日月光、欣興、南電、台光電</li>
+<li>矽光子 / CPO：上詮、訊芯-KY、聯亞、IET-KY</li>
+</ul>
+<p>來源：</p>
+<ul>
+<li>[Delta at GTC 2026](https://www.delta-americas.com/en-US/news/40116)</li>
+<li>[Delta at Data Center World 2026](https://www.delta-americas.com/en-us/news/delta-unveils-integrated-power%2C-cooling%2C-and-infrastructure-architecture-for-ai-data-centers-at-data-center-world-2026)</li>
+<li>[TechNews: supply chain at GTC 2026](https://technews.tw/2026/03/14/ai-supply-chain-convenes-at-nvidia-gtc-2026/)</li>
+<li>[TechNews: Rubin design change hits Jentech](https://technews.tw/2026/05/06/ai-server-jentech/)</li>
+<li>[TechNews: silicon photonics supply chain](https://technews.tw/2026/01/22/silicon-photonics-supply-chain/)</li>
+<li>[TechNews: TSMC/ASE silicon photonics push](https://technews.tw/2026/03/17/silicon-photonics-hits-the-market-tsmc-and-ase-spearhead-taiwans-strategic-push/)</li>
+</ul>
+<h4>實戰用法</h4>
+<h5>核心倉觀察</h5>
+<ul>
+<li>NVIDIA</li>
+<li>台積電</li>
+<li>鴻海</li>
+<li>緯穎</li>
+<li>台達電</li>
+</ul>
+<h5>高彈性觀察</h5>
+<ul>
+<li>奇鋐</li>
+<li>雙鴻</li>
+<li>健策</li>
+<li>欣興</li>
+<li>南電</li>
+</ul>
+<h5>後段技術長線觀察</h5>
+<ul>
+<li>日月光投控</li>
+<li>上詮</li>
+<li>訊芯-KY</li>
+</ul>
+<h4>你接下來要盯的指標</h4>
+<ul>
+<li>`月營收`：台積電、緯穎、鴻海、台達電、奇鋐、雙鴻、健策、欣興、南電</li>
+<li>`法說關鍵詞`：`Rubin`、`AI server`、`liquid cooling`、`800VDC`、`CoWoS`、`CPO`、`HBM4`</li>
+<li>`官方活動`：NVIDIA GTC、COMPUTEX、各家 AI infra 發表會</li>
+<li>`風險訊號`：Rubin 規格改版、封裝設計轉彎、HBM 認證延後、雲端客戶 CapEx 放緩</li>
+</ul>
+    </section>
+    <section class="section-card">
+      <h2>AI PC / N1X Beneficiaries</h2>
+      <h3>AI PC / N1X 受惠股總表</h3>
+<p>更新日期：2026-05-31</p>
+<p>方法：優先採用 NVIDIA / MediaTek / Microsoft 等公開資訊，搭配產業媒體與供應鏈訊號。</p>
+<p>分級原則：</p>
+<ul>
+<li>`A`：與 N1X / Windows on Arm / AI PC 發表直接相關，且有官方公開訊號</li>
+<li>`B`：高機率核心受惠，供應鏈邏輯明確</li>
+<li>`C`：受惠邏輯存在，但更偏市場預期與題材彈性</li>
+</ul>
+<h4>核心結論</h4>
+<ul>
+<li>`主軸公司`：`NVIDIA`</li>
+<li>`台股最核心`：`聯發科 2454`、`台積電 2330`、`華碩 2357`</li>
+<li>`OEM 觀察名單`：`廣達 2382`、`緯創 3231`、`英業達 2356`、`技嘉 2376`</li>
+<li>`高彈性延伸`：`AMD` 相關競爭鏈、Windows on Arm 生態系受惠股</li>
+</ul>
+<h4>受惠股總表</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>個股</th><th>等級</th><th>角色</th><th>受惠邏輯</th><th>證據等級</th><th>近期催化</th><th>主要風險</th><th>追蹤重點</th></tr></thead>
+<tbody>
+<tr><td>NVIDIA</td><td>A</td><td>N1X / AI PC 平台本體</td><td>市場高度預期 N1X 將成為 Windows on Arm / AI PC 新平台核心</td><td>官方預熱 + 多方媒體交叉</td><td>GTC Taipei / COMPUTEX / 正式發表</td><td>延期、效能與驅動不如預期</td><td>正式產品命名、OEM 名單、量產時點</td></tr>
+<tr><td>聯發科 2454</td><td>B</td><td>潛在協作 / ASIC / Arm PC 延伸</td><td>市場反覆連結 N1X / AI PC / MediaTek 合作敘事；官方已和 NVIDIA 在 AI / DGX Spark 有合作展示</td><td>強推論 + 官方合作背景</td><td>COMPUTEX、合作發表、AI PC 題材升溫</td><td>若 N1X 最終不採此鏈，評價回落快</td><td>法說是否提及 PC / AI 裝置合作</td></tr>
+<tr><td>台積電 2330</td><td>B</td><td>晶片製造</td><td>若 N1X 成真，先進製程受惠最直接</td><td>供應鏈邏輯極強</td><td>N1X 發表、量產時點</td><td>市場已高度預期</td><td>月營收、先進製程稼動率</td></tr>
+<tr><td>華碩 2357</td><td>B</td><td>AI PC / OEM</td><td>TechNews 與市場消息常把華碩列入 NVIDIA PC 新平台關注名單</td><td>媒體與 OEM 邏輯</td><td>COMPUTEX、Windows on Arm 新機</td><td>若首波名單不在內，熱度快速消退</td><td>新機發表、NVIDIA / Microsoft 同台</td></tr>
+<tr><td>廣達 2382</td><td>B</td><td>筆電 / 系統製造</td><td>若 AI PC 量產，廣達是高機率系統代工受惠者</td><td>OEM 邏輯強</td><td>下半年新機備貨</td><td>AI PC 滲透率不如預期</td><td>NB 出貨、AI PC 占比</td></tr>
+<tr><td>緯創 3231</td><td>B</td><td>筆電 / 系統製造</td><td>與廣達類似，受惠 Windows on Arm / AI PC 組裝量產</td><td>OEM 邏輯強</td><td>新平台備貨</td><td>出貨節奏不明</td><td>NB / PC 出貨、AI 裝置接單</td></tr>
+<tr><td>英業達 2356</td><td>B</td><td>筆電 / 商用 PC</td><td>若企業端 AI PC 導入擴散，商用筆電代工有機會受惠</td><td>OEM 邏輯</td><td>商用 AI PC 擴散</td><td>商用客戶採用慢</td><td>商用 PC 展望</td></tr>
+<tr><td>技嘉 2376</td><td>C</td><td>高效能 PC / AI 桌機</td><td>若 N1X 或 NVIDIA AI PC 擴到桌上型與高效能終端，技嘉會有題材彈性</td><td>題材邏輯</td><td>COMPUTEX / 終端 AI 裝置</td><td>容易題材先行</td><td>新產品線、終端規格</td></tr>
+<tr><td>AMD</td><td>C</td><td>競品映射</td><td>AI PC 題材升溫通常帶動整體 PC AI 評價擴張</td><td>題材映射</td><td>財報 / PC 市場回溫</td><td>與 N1X 並非直接受惠</td><td>AI PC 市場份額</td></tr>
+</tbody></table></div>
+<h4>公開資訊摘要</h4>
+<h5>1. NVIDIA / Microsoft 已共同預熱 PC 新平台</h5>
+<ul>
+<li>多家媒體報導 NVIDIA 與 Microsoft 以 `A new era of PC` 為題協同預熱</li>
+<li>市場普遍推測與 `N1X`、`Windows on Arm` 新平台有關</li>
+</ul>
+<p>參考：</p>
+<ul>
+<li>[Axios: First Windows PCs powered by Nvidia chips to debut next week](https://www.axios.com/2026/05/30/nvidia-microsoft-pcs-ai-surface-dell)</li>
+<li>[Windows Central: A new era of PC](https://www.windowscentral.com/hardware/surface/a-new-era-of-pc-microsoft-and-nvidia-tease-major-announcement-experts-predict-to-be-the-fabled-n1x-chip)</li>
+</ul>
+<h5>2. MediaTek 與 NVIDIA 的公開合作背景</h5>
+<ul>
+<li>MediaTek 官方在 COMPUTEX 2026 直接提到與 NVIDIA 共同展示 DGX Spark</li>
+<li>這不是 N1X 本身的直接證據，但代表雙方 AI / Arm / edge-to-cloud 協作關係公開存在</li>
+</ul>
+<p>參考：</p>
+<ul>
+<li>[MediaTek COMPUTEX 2026](https://www.mediatek.com/computex2026)</li>
+<li>[MediaTek press release](https://www.mediatek.com/zh-cn/press-room/mediatek-to-empower-the-agentic-ai-era-with-edge-to-cloud-tech-at-computex-2026)</li>
+<li>[MediaTek CES 2026 recap](https://www.mediatek.com/tek-talk-blogs/ces-2026-recap)</li>
+</ul>
+<h4>實戰用法</h4>
+<h5>核心研究</h5>
+<ul>
+<li>NVIDIA</li>
+<li>聯發科</li>
+<li>台積電</li>
+</ul>
+<h5>OEM 觀察</h5>
+<ul>
+<li>華碩</li>
+<li>廣達</li>
+<li>緯創</li>
+<li>英業達</li>
+</ul>
+<h5>高彈性題材</h5>
+<ul>
+<li>技嘉</li>
+<li>其他 Windows on Arm / AI PC 概念股</li>
+</ul>
+<h4>你接下來要盯的指標</h4>
+<ul>
+<li>`官方發表`：N1X 命名、OEM 名單、上市時間</li>
+<li>`法說關鍵詞`：`AI PC`、`Windows on Arm`、`Copilot+ PC`、`N1X`</li>
+<li>`新機發布`：COMPUTEX、GTC Taipei、OEM 自家新品會</li>
+<li>`量產驗證`：出貨時點、供應鏈月營收、備貨訊號</li>
+</ul>
+    </section>
+    <section class="section-card">
+      <h2>Supply Chain Universe</h2>
+      <h3>AI 基建 / Rubin / AI PC 供應鏈宇宙</h3>
+<p>更新日期：2026-05-31</p>
+<p>目的：不用「誰上新聞」決定選股，而是從平台、規格、BOM、量產與基本面，反推可驗證的受惠股。</p>
+<h4>方法</h4>
+<p>一家公司要進正式追蹤，至少滿足以下 4 層中的 2 層：</p>
+<p>1. `官方連結`</p>
+<ul>
+<li>NVIDIA / OEM / 零組件公司官方新聞稿、產品頁、展會資料、datasheet</li>
+</ul>
+<p>2. `規格 / BOM 對應`</p>
+<ul>
+<li>該公司產品真的是平台需要的材料或零組件</li>
+</ul>
+<p>3. `基本面驗證`</p>
+<ul>
+<li>月營收、法說、財報、毛利率、產能利用率、資本支出</li>
+</ul>
+<p>4. `客戶 / 驗證 / 量產節點`</p>
+<ul>
+<li>認證、導入、sample、量產、deployment、設計定案</li>
+</ul>
+<h4>分層</h4>
+<h5>1. 系統整機 / 機架 / AI Factory</h5>
+<p>核心：</p>
+<ul>
+<li>鴻海 2317</li>
+<li>緯穎 6669</li>
+<li>華碩 2357</li>
+<li>技嘉 2376</li>
+<li>仁寶 2324</li>
+<li>和碩 4938</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>是否有 `Vera Rubin NVL72`、`NVL8`、`AI POD`、`liquid-cooled rack` 官方頁</li>
+<li>是否有客戶導入與出貨節點</li>
+</ul>
+<h5>2. 電力 / 液冷 / 散熱</h5>
+<p>核心：</p>
+<ul>
+<li>台達電 2308</li>
+</ul>
+<p>高彈性：</p>
+<ul>
+<li>奇鋐 3017</li>
+<li>雙鴻 3324</li>
+<li>健策 3653</li>
+<li>建準 2421</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>`800VDC`、`CDU`、`liquid cooling`、`cold plate`、高功耗 rack</li>
+<li>公司是否在法說或展會明確提到 AI data center power/cooling</li>
+</ul>
+<h5>3. 晶圓製造 / 先進封裝 / 封測</h5>
+<p>核心：</p>
+<ul>
+<li>台積電 2330</li>
+<li>日月光投控 3711</li>
+</ul>
+<p>高彈性：</p>
+<ul>
+<li>欣興 3037</li>
+<li>南電 8046</li>
+<li>台光電 2383</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>`3nm`、`CoWoS`、`CoWoS-L`、`advanced packaging`、`ABF`</li>
+<li>月營收與法說是否出現 AI/HPC 占比上升</li>
+</ul>
+<h5>4. PCB / CCL / 銅箔 / 高速材料</h5>
+<p>次核心：</p>
+<ul>
+<li>台光電 2383</li>
+<li>台燿 6274</li>
+<li>聯茂 6213</li>
+<li>金像電 2368</li>
+<li>欣興 3037</li>
+<li>南電 8046</li>
+</ul>
+<p>延伸觀察：</p>
+<ul>
+<li>金居 8358</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>高速板材、低損耗材料、銅箔升級是否對應 AI server / switch / accelerator board</li>
+<li>公司是否在法說、月營收、產品組合中出現 AI / 高速材料貢獻</li>
+</ul>
+<p>備註：</p>
+<ul>
+<li>`金居 8358` 值得納入，不是因為有人點名，而是因為它屬於高階銅箔 / 材料鏈的潛在受惠股。</li>
+<li>但目前更適合放在 `延伸觀察`，除非後續出現更明確的 AI server / 高速材料 / 客戶驗證訊號。</li>
+</ul>
+<h5>5. HBM / 記憶體</h5>
+<p>核心：</p>
+<ul>
+<li>SK Hynix</li>
+<li>Samsung Electronics</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>`HBM4`</li>
+<li>認證、良率、量產時點</li>
+</ul>
+<h5>6. 光通訊 / 矽光子 / CPO</h5>
+<p>次核心：</p>
+<ul>
+<li>日月光投控 3711</li>
+</ul>
+<p>高彈性：</p>
+<ul>
+<li>上詮 3363</li>
+<li>訊芯-KY 6451</li>
+<li>聯亞 3081</li>
+<li>IET-KY 4971</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>`CPO`、`SiPh`、`optical I/O`</li>
+<li>是否從概念走到認證與量產</li>
+</ul>
+<h5>7. AI PC / Windows on Arm / N1X</h5>
+<p>核心：</p>
+<ul>
+<li>NVIDIA</li>
+<li>聯發科 2454</li>
+<li>台積電 2330</li>
+</ul>
+<p>OEM 觀察：</p>
+<ul>
+<li>華碩 2357</li>
+<li>廣達 2382</li>
+<li>緯創 3231</li>
+<li>英業達 2356</li>
+<li>技嘉 2376</li>
+</ul>
+<p>驗證依據：</p>
+<ul>
+<li>`N1X`、`Windows on Arm`、`AI PC`、`Copilot+ PC`</li>
+<li>OEM 名單、新機發布、備貨節點、月營收</li>
+</ul>
+<h4>如何使用這張表</h4>
+<ul>
+<li>`核心`：適合列入長期研究與核心追蹤</li>
+<li>`次核心`：要等更多營運驗證</li>
+<li>`高彈性`：適合事件驅動，不能只因熱度加碼</li>
+<li>`延伸觀察`：邏輯成立但證據還不夠硬</li>
+</ul>
+<h4>每日 mail 應優先回報的不是「新聞最多的股」，而是：</h4>
+<p>1. 哪一層供應鏈出現新的官方或量產證據</p>
+<p>2. 哪一檔股票的 `validation score` 明顯上升</p>
+<p>3. 哪些名字只是熱度上升，但證據還停留在題材層</p>
+    </section>
   </main>
 </body>
 </html>
